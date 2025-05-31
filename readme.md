@@ -1,29 +1,7 @@
-<h1 align="center">Website Company Profile Travel Agent</h1>
-
-<div align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/Laravel-6-red.svg?style=flat-square" alt="laravel">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/MySQL-.-orange.svg?style=flat-square" alt="mysql">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Bootstrap-4-blue.svg?style=flat-square" alt="bootstrap">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/%20-Regna%20Template%202-coral.svg" alt="regna">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/%20-ElaAdmin%202-green.svg" alt="ela-admin">
-  </a>
-</div>
+<h1 align="center">Website Company Profile/h1>
 
 
 
-## Pengantar
-&emsp; &emsp; Ini adalah website company profile yang saya buat menggunakan Framework Laravel 6 untuk backend-nya dan framework bootstrap 4 untuk tampilannya. <br />
-&emsp; &emsp; Sistem ini berfungsi untuk ajang promosi usaha Agent Travel yang kita punya, dapat juga digunakan untuk menulis blog atau artikel-artikel seputar travelling dan membagikannya di website ini, selain itu kita juga bisa menampilkan destinasi-destinasi wisata yang dapat dikunjungi dengan jasa yang kita punya sehingga pengunjung bisa melihat dan memilih sendiri destinasi yang ingin dikunjungi.<br />
-	
 	
 ## Fitur
 Fitur yang tersedia di website ini adalah
@@ -68,26 +46,8 @@ Software yang diperlukan untuk menjalankan aplikasi ini adalah
 
 <br />
 <br />
-
-## Screenshot Halaman User
-<p align='Left' valign='top'>
-    <span>
-        <img src='https://github.com/DanyAdhi/Company-Profile-Laravel/blob/master/ScreenShot/user-home.jpg'  width=400 />
-        <img src='https://github.com/DanyAdhi/Company-Profile-Laravel/blob/master/ScreenShot/user-articles.png'  width=400 />
-    </span>
-</p>
-
-<p align='Left' valign='top'>
-    <span>
-        <img src='https://github.com/DanyAdhi/Company-Profile-Laravel/blob/master/ScreenShot/user-destinations.jpg'  width=400 />
-        <img src='https://github.com/DanyAdhi/Company-Profile-Laravel/blob/master/ScreenShot/user-contact.png'  width=400 />
-    </span>
-</p>
-
-
-
 <br />
 <br />
 
 ## Kontak
-https://danyadhi.github.io/
+ga ada

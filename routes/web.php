@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/', function(){return redirect('/home');});
 Route::get('/home', 'UserController@home')->name('home');
 Route::get('/blog', 'UserController@blog')->name('blog');
@@ -42,5 +45,6 @@ Route::prefix('admin')->group(function(){
   Route::get('/abouts/{about}/edit', 'AboutController@edit')->name('abouts.edit')->middleware('auth');
   Route::put('/abouts/{about}', 'AboutController@update')->name('abouts.update')->middleware('auth');
     
-    
+   //routecontact
+   Route::post('/contact/send', 'ContactController@send')->name('contact.send');
 });
