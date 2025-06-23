@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Destinations')
+@section('title', 'Layanan')
 
 @section('breadcrumbs', 'Overview Destinations')
 

@@ -3,7 +3,7 @@
 @section('header')
     <style>
         #hero{
-            background: url('{{asset('user/images/contact.png')}}') top center;
+            background: url('{{asset('user/images/laundryhome.jpg')}}') top center;
             background-repeat: no-repeat;
             width:100%;
             background-size:cover;
@@ -12,8 +12,8 @@
 @endsection
 
 @section('hero')
-    <h1>Contact Hanna Laundry</h1>
-    <h2>Bergabung dan laundry di Kami</h2>
+    <h1 style="color: #e63946; text-shadow: 2px 2px #a8dadc;">Contact Hanna Laundry</h1>
+    <h2 style="color:rgb(255, 255, 255); text-shadow: 2px 2px #a8dadc;">Bergabung dan laundry di Kami</h2>
 @endsection
 
 @section('content')
@@ -37,24 +37,24 @@
             <div>
               <i class="fa fa-map-marker"></i>
               <p>hannalaundry,
-                <br>tangsel</p>
+                <br>Jl. Intan 1, Curug, Poncol, Kabupaten Bogor, Jawa Barat 16340</p>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>tripujiantoro@gmail.com</p>
+              <p>roksilaundry@gmail.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>081314234712</p>
+              <p>081398339180</p>
             </div>
           </div>
 
           <div class="social-links">
             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://instagram.com/hanna_perlengkapanlaundry" class="instagram"><i class="fa fa-instagram"></i></a>
             <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
           </div>

@@ -127,7 +127,10 @@
         <div class="container wow fadeInUp">
           <div class="section-header">
             <h3 class="section-title">Galeri</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+<p class="section-description">
+  Dokumentasi kegiatan dan fasilitas Hanna Laundry. Kami hadir dengan perlengkapan modern, proses pencucian yang higienis, dan pelayanan yang ramah. Lihat lebih dekat bagaimana kami bekerja untuk menjaga kebersihan dan kenyamanan pakaian Anda.
+</p>
+
           </div>
         </div>
   
