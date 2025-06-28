@@ -45,6 +45,32 @@ Route::prefix('admin')->group(function(){
   Route::get('/abouts/{about}/edit', 'AboutController@edit')->name('abouts.edit')->middleware('auth');
   Route::put('/abouts/{about}', 'AboutController@update')->name('abouts.update')->middleware('auth');
     
-   //routecontact
-   Route::post('/contact/send', 'ContactController@send')->name('contact.send');
+  // route contact
+  Route::post('/contact/send', 'ContactController@send')->name('contact.send');
+  
+  // route twitter integration (localhost only)
+  Route::get('/twitter/test', function() {
+    if (app()->environment('local')) {
+      $twitterService = new \App\Services\TwitterService();
+      $tweets = $twitterService->fetchLatestTweets(5);
+      return response()->json([
+        'message' => 'Twitter API Test',
+        'tweets_found' => count($tweets),
+        'tweets' => $tweets
+      ]);
+    }
+    abort(404);
+  })->name('admin.twitter.test')->middleware('auth');
+  
+  Route::get('/twitter/sync', function() {
+    if (app()->environment('local')) {
+      $twitterService = new \App\Services\TwitterService();
+      $synced = $twitterService->syncTweetsToArticles();
+      return response()->json([
+        'message' => "Successfully synced {$synced} tweets",
+        'synced' => $synced
+      ]);
+    }
+    abort(404);
+  })->name('admin.twitter.sync')->middleware('auth');
 });
