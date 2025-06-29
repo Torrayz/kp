@@ -34,4 +34,5 @@ class SyncTwitterCommand extends Command
         
         return 0;
     }
+    
 }

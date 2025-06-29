@@ -47,12 +47,55 @@
       </div>
 
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="{{$url=='home'?'menu-active':''}}"><a href="{{url('home')}}">Home</a></li>
-          <li class="{{$url=='blog'?'menu-active':''}}"><a href="{{url('blog')}}">Blog</a></li>
-          <li class="{{$url=='destination'?'menu-active':''}}"><a href="{{url('destination')}}">Layanan</a></li>
-          <li class="{{$url=='contact'?'menu-active':''}}"><a href="{{url('contact')}}">Contact </a></li>
-        </ul>
+  <ul class="nav-menu">
+    <li class="{{$url=='home'?'menu-active':''}}"><a href="{{url('home')}}">Home</a></li>
+    <li class="{{$url=='blog'?'menu-active':''}}"><a href="{{url('blog')}}">Blog</a></li>
+    <li class="{{$url=='destination'?'menu-active':''}}"><a href="{{url('destination')}}">Layanan</a></li>
+    <li class="{{$url=='contact'?'menu-active':''}}"><a href="{{url('contact')}}">Contact</a></li>
+    
+    {{-- Admin Menu dengan styling subtle --}}
+    <li class="admin-menu-subtle">
+      <a href="{{url('/admin')}}" class="admin-link-subtle">
+        <i class="fa fa-user-circle"></i> Admin
+      </a>
+    </li>
+  </ul>
+</nav><!-- #nav-menu-container -->
+
+<style>
+.admin-menu-subtle {
+  border-left: 1px solid #ddd;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.admin-menu-subtle .admin-link-subtle {
+  color: #666 !important;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.admin-menu-subtle .admin-link-subtle:hover {
+  color: #007bff !important;
+}
+
+.admin-menu-subtle .admin-link-subtle i {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-menu-subtle {
+    border-left: none;
+    border-top: 1px solid #ddd;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+</style>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\Visitor; // Tambahkan import Visitor model
 
 class DashboardController extends Controller
 {
@@ -16,9 +17,17 @@ class DashboardController extends Controller
     {
         $data = [
             'draft'     => Article::where('status', 'DRAFT')->count(),
-            'publish'   => Article::where('status', 'PUBLISH')->count()
+            'publish'   => Article::where('status', 'PUBLISH')->count(),
+            'visitors'  => Visitor::getTotalVisitors() // Tambahkan data visitor real
         ];
-        return view('dashboards.index', ['data'=>$data]);
+
+        // Data untuk chart traffic (real data)
+        $chartData = Visitor::getChartData();
+
+        return view('dashboards.index', [
+            'data' => $data,
+            'chartData' => $chartData // Pass chart data ke view
+        ]);
     }
 
     /**

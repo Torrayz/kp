@@ -74,3 +74,22 @@ Route::prefix('admin')->group(function(){
     abort(404);
   })->name('admin.twitter.sync')->middleware('auth');
 });
+// routes/web.php - tambahkan route test
+Route::get('/test-twitter', function() {
+    try {
+        Artisan::call('twitter:sync');
+        $output = Artisan::output();
+        
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Twitter sync completed',
+            'output' => $output,
+            'timestamp' => now()
+        ]);
+    } catch (Exception $e) {
+        return response()->json([
+            'status' => 'error',
+            'message' => $e->getMessage()
+        ]);
+    }
+});

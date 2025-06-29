@@ -121,6 +121,7 @@
   
         </div>
       </section>
+      
   
       <!--========================== Gallery Section ============================-->
       <section id="contact" style="padding-bottom:85px">
@@ -164,4 +165,5 @@
   
         </div>
       </section>
+      
 @endsection
